@@ -9,5 +9,5 @@ import viewcounter
 def ResumeCounter(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
-    return count_increment(req)
+    return viewcounter.count_increment(req)
 

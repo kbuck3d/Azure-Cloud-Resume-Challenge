@@ -4,8 +4,8 @@ import os
 import requests
 
 # Cosmos DB connection global vars
-endpoint = "https://cdb-crckb.documents.azure.com:443/"
-account_key = "kpy8rkRoixHHQXnnb9bKIf0Y5qM2bjvE7dY66Muhr2bUYrgaNVoef8fvvkI6w8SzjhQGGNXmNt0uACDbmPDafg=="
+endpoint = ["ENDPOINT"]
+account_key = ["KEY"]
 
 client = CosmosClient(url=endpoint, credential=account_key)
 database_name = "AzureResume"
@@ -26,7 +26,7 @@ def test_resume_counter():
 
     # increment_count in cosmos db with a new API call
     req = requests.get("")
-    count_updater(req)
+    viewcounter.count_updater(req)
 
     new_count = get_count_from_cosmosdb()
     
