@@ -4,8 +4,8 @@ import azure.functions as func
 from azure.cosmos import CosmosClient
 
 # Cosmos DB connection global vars
-endpoint = os.environ["COSMOS_ENDPOINT"]
-account_key = os.environ["COSMOS_KEY"]
+endpoint = "https://cdb-crckb.documents.azure.com:443/"
+account_key = "kpy8rkRoixHHQXnnb9bKIf0Y5qM2bjvE7dY66Muhr2bUYrgaNVoef8fvvkI6w8SzjhQGGNXmNt0uACDbmPDafg=="
 
 client = CosmosClient(url=endpoint, credential=account_key)
 database_name = "AzureResume"

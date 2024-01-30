@@ -3,7 +3,7 @@ import logging
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
-from .viewcounter import count_increment
+import viewcounter
 
 @app.route(route="ResumeCounter")
 def ResumeCounter(req: func.HttpRequest) -> func.HttpResponse:
