@@ -4,8 +4,8 @@ import os
 import requests
 
 # Cosmos DB connection global vars
-endpoint = ["ENDPOINT"]
-account_key = ["KEY"]
+endpoint = os.environ["ENDPOINT"]
+account_key = os.environ["KEY"]
 
 client = CosmosClient(url=endpoint, credential=account_key)
 database_name = "AzureResume"
