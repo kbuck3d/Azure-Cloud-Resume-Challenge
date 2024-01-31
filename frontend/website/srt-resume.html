@@ -8,7 +8,15 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" />
+	<style>
+		/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}body{text-align:center;}#doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7{margin:auto;text-align:left;width:57.69em;*width:56.25em;}#doc2{width:73.076em;*width:71.25em;}#doc3{margin:auto 10px;width:auto;}#doc4{width:74.923em;*width:73.05em;}.yui-b{position:relative;}.yui-b{_position:static;}#yui-main .yui-b{position:static;}#yui-main,.yui-g .yui-u .yui-g{width:100%;}.yui-t1 #yui-main,.yui-t2 #yui-main,.yui-t3 #yui-main{float:right;margin-left:-25em;}.yui-t4 #yui-main,.yui-t5 #yui-main,.yui-t6 #yui-main{float:left;margin-right:-25em;}.yui-t1 .yui-b{float:left;width:12.30769em;*width:12.00em;}.yui-t1 #yui-main .yui-b{margin-left:13.30769em;*margin-left:13.05em;}.yui-t2 .yui-b{float:left;width:13.8461em;*width:13.50em;}.yui-t2 #yui-main .yui-b{margin-left:14.8461em;*margin-left:14.55em;}.yui-t3 .yui-b{float:left;width:23.0769em;*width:22.50em;}.yui-t3 #yui-main .yui-b{margin-left:24.0769em;*margin-left:23.62em;}.yui-t4 .yui-b{float:right;width:13.8456em;*width:13.50em;}.yui-t4 #yui-main .yui-b{margin-right:14.8456em;*margin-right:14.55em;}.yui-t5 .yui-b{float:right;width:18.4615em;*width:18.00em;}.yui-t5 #yui-main .yui-b{margin-right:19.4615em;*margin-right:19.125em;}.yui-t6 .yui-b{float:right;width:23.0769em;*width:22.50em;}.yui-t6 #yui-main .yui-b{margin-right:24.0769em;*margin-right:23.62em;}.yui-t7 #yui-main .yui-b{display:block;margin:0 0 1em 0;}#yui-main .yui-b{float:none;width:auto;}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{float:left;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf,.yui-gc .yui-u,.yui-gd .yui-g,.yui-g .yui-gc .yui-u,.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf .yui-g,.yui-gf .yui-u{float:right;}.yui-g div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first,.yui-ge div.first,.yui-gf div.first,.yui-g .yui-gc div.first,.yui-g .yui-ge div.first,.yui-gc div.first div.first{float:left;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf{width:49.1%;}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{width:32%;margin-left:1.99%;}.yui-gb .yui-u{*margin-left:1.9%;*width:31.9%;}.yui-gc div.first,.yui-gd .yui-u{width:66%;}.yui-gd div.first{width:32%;}.yui-ge div.first,.yui-gf .yui-u{width:74.2%;}.yui-ge .yui-u,.yui-gf div.first{width:24%;}.yui-g .yui-gb div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first{margin-left:0;}.yui-g .yui-g .yui-u,.yui-gb .yui-g .yui-u,.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u,.yui-ge .yui-g .yui-u,.yui-gf .yui-g .yui-u{width:49%;*width:48.1%;*margin-left:0;}.yui-g .yui-g .yui-u{width:48.1%;}.yui-g .yui-gb div.first,.yui-gb .yui-gb div.first{*margin-right:0;*width:32%;_width:31.7%;}.yui-g .yui-gc div.first,.yui-gd .yui-g{width:66%;}.yui-gb .yui-g div.first{*margin-right:4%;_margin-right:1.3%;}.yui-gb .yui-gc div.first,.yui-gb .yui-gd div.first{*margin-right:0;}.yui-gb .yui-gb .yui-u,.yui-gb .yui-gc .yui-u{*margin-left:1.8%;_margin-left:4%;}.yui-g .yui-gb .yui-u{_margin-left:1.0%;}.yui-gb .yui-gd .yui-u{*width:66%;_width:61.2%;}.yui-gb .yui-gd div.first{*width:31%;_width:29.5%;}.yui-g .yui-gc .yui-u,.yui-gb .yui-gc .yui-u{width:32%;_float:right;margin-right:0;_margin-left:0;}.yui-gb .yui-gc div.first{width:66%;*float:left;*margin-left:0;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf .yui-u{margin:0;}.yui-gb .yui-gb .yui-u{_margin-left:.7%;}.yui-gb .yui-g div.first,.yui-gb .yui-gb div.first{*margin-left:0;}.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u{*width:48.1%;*margin-left:0;}.yui-gb .yui-gd div.first{width:32%;}.yui-g .yui-gd div.first{_width:29.9%;}.yui-ge .yui-g{width:24%;}.yui-gf .yui-g{width:74.2%;}.yui-gb .yui-ge div.yui-u,.yui-gb .yui-gf div.yui-u{float:right;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf div.first{float:left;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf div.first{*width:24%;_width:20%;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf .yui-u{*width:73.5%;_width:65.5%;}.yui-ge div.first .yui-gd .yui-u{width:65%;}.yui-ge div.first .yui-gd div.first{width:32%;}#hd:after,#bd:after,#ft:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,.yui-gf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}#hd,#bd,#ft,.yui-g,.yui-gb,.yui-gc,.yui-gd,.yui-ge,.yui-gf{zoom:1;}
+	</style>
 	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
 
 </head>
@@ -37,39 +45,46 @@
 		<div class="yui-gf">
 
 			<div class="yui-u first">
-				<h2>Experience</h2>
+				<h2>Work Experience</h2>
 			</div><!--// .yui-u -->
 
 			<div class="yui-u">
 
 				<div class="job">
-					<h2>Facebook</h2>
-					<h3>Senior Interface Designer</h3>
-					<h4>2005-2007</h4>
-					<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+					<h2>APG SGA AG</h2>
+					<h3>System Engineer Windows</h3>
+					<h4>07/2022 - present</h4>
+					<p>• Took on primary responsibility for supporting, expanding, and troubleshooting the entire company network leading to reduction in downtime, better status monitoring and increase in employee productivity.</p>
+					<p>• Contributed to the build up of the companies Azure tenant from inception, ensuring consistent naming convention, implementing security controls and preparing the environment for the usage of Office 365 SaaS applications</p>
+					<p>• Contributed to support, expansion, and troubleshooting efforts for a complex Windows server environment encompassing over 110 servers, both on-premises and in Azure, ensuring seamless operation and optimal performance.</p>
+					<p>• Provided advanced technical support for resolving complex user issues and challenges, ensuring seamless operation and user satisfaction. Acted as a subject matter expert (SME) for troubleshooting intricate technical issues.</p>
+					<p>• Served as the deputy main point of contact for maintaining and troubleshooting the Linux server environment, supporting the smooth operation of critical systems and services.</p>
 				</div>
 
 				<div class="job">
-					<h2>Apple Inc.</h2>
-					<h3>Senior Interface Designer</h3>
-					<h4>2005-2007</h4>
-					<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+					<h2>Corris AG</h2>
+					<h3>IT System Engineer / IT Supporter</h3>
+					<h4>05/2021 - 07/2022</h4>
+					<p>• Provided timely and efficient support for Windows 10 clients, Mac clients, and thin clients, addressing system or application issues to ensure uninterrupted workflow for end-users.</p>
+					<p>• Configured and deployed workstations for employees, ensuring seamless integration with the company's IT infrastructure. Provided comprehensive instruction and training to employees.</p>
+					<p>• Identified and resolved technical issues related to peripheral devices, ensuring seamless functionality and optimal performance</p>
 				</div>
 
 				<div class="job">
-					<h2>Microsoft</h2>
-					<h3>Principal and Creative Lead</h3>
-					<h4>2004-2005</h4>
-					<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
+					<h2>Credit Suisse AG</h2>
+					<h3>System Engineer</h3>
+					<h4>08/2017 - 07/2020</h4>
+					<p>• Provided 24/7 second-level support for team-hosted business applications, ensuring uninterrupted availability and optimal performance to meet business requirements and user expectations.</p>
+					<p>• Engineering tasks to improve, simplify and automate processes</p>
+					<p>• Developed and integrated business solutions for Entry & Login Server</p>
 				</div>
 
 
 				<div class="job last">
-					<h2>International Business Machines (IBM)</h2>
-					<h3>Lead Web Designer</h3>
-					<h4>2001-2004</h4>
-					<p>Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.</p>
-				</div>
+					<h2>Credit Suisse AG</h2>
+					<h3>IT apprenticeship</h3>
+					<h4>08/2013 - 07/2017</h4>
+					</div>
 
 			</div><!--// .yui-u -->
 		</div><!--// .yui-gf -->
@@ -77,63 +92,82 @@
 
 					<div class="yui-gf">
 						<div class="yui-u first">
-							<h2>Skills</h2>
-						</div>
-						<div class="yui-u">
-
-								<div class="talent">
-									<h2>Web Design</h2>
-									<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
-								</div>
-
-								<div class="talent">
-									<h2>Interface Design</h2>
-									<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
-								</div>
-
-								<div class="talent">
-									<h2>Project Direction</h2>
-									<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
-								</div>
-						</div>
-					</div><!--// .yui-gf -->
-
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Technical</h2>
+							<h2>Technical Skills</h2>
 						</div>
 						<div class="yui-u">
 							<ul class="talent">
-								<li>XHTML</li>
-								<li>CSS</li>
-								<li class="last">Javascript</li>
+								<li>Microsoft Windows Server</li>
+								<li class="last">Linux OS</li>
 							</ul>
 
 							<ul class="talent">
-								<li>Jquery</li>
-								<li>PHP</li>
-								<li class="last">CVS / Subversion</li>
+								<li>MS Office 365</li>
+								<li class="last">Azure</li>
 							</ul>
 
 							<ul class="talent">
-								<li>OS X</li>
-								<li>Windows XP/Vista</li>
-								<li class="last">Linux</li>
+								<li>Powershell</li>
+								<li class="last">JIRA & Confluence</li>
 							</ul>
+
+							<ul class="talent">
+								<li>Network & Security</li>
+								<li class="last">Windows 10/11</li>
 						</div>
 					</div><!--// .yui-gf-->
 
 
-					<div class="yui-gf last">
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Soft Skills</h2>
+						</div>
+						<div class="yui-u">
+							<ul class="talent">
+								<li>Strong communication & teamwork skills</li>
+								<li>Problem-solving skills</li>
+								<li>Decision-making & organization skills</li>
+								<li class="last">Emotionally intelligent</li>
+							</ul>
+						</div>
+					</div><!--// .yui-gf-->
+
+					<div class="yui-gf ">
 						<div class="yui-u first">
 							<h2>Education</h2>
 						</div>
 						<div class="yui-u">
-							<h2>Indiana University - Bloomington, Indiana</h2>
-							<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+							<h2>Middlesex University London</h2>
+							<h3>Bachelor of Arts in Game Art & 3D Animation </h3>
 						</div>
 					</div><!--// .yui-gf -->
+					
+					<div class="yui-gf ">
+						<div class="yui-u first">
+							<h2>Certifications & Accomplishments</h2>
+						</div>
+						<div class="yui-u">
+							<h3>PMI: Certified Associate in Project Management (CAPM)</h3>
+							<h3>Scrum.org: Certified Professional Scrum Master (PSM I)</h3>
+							<h3>AZ-900: Certified Microsoft Azure Fundamentals</h3>
+							<h3>AZ-104: Certified Microsoft Azure Administrator</h3>
+							<h3>AZ-303 / AZ-304 / AZ-305: Certified Microsoft Azure Solution Architect</h3>
+							<h3>Cloud Resume Challenge by Forrest Brazeal:</h3>
+							<p>	○ Successfully completed the Cloud Resume Challenge created by Forrest Brazeal, a comprehensive hands-on project designed to demonstrate proficiency in cloud technologies and showcase practical skills in building and deploying cloud-native applications.</p>
+						</div>
+					</div><!--// .yui-gf-->
 
+						<div class="yui-gf">
+							<div class="yui-u first">
+								<h2>Languages</h2>
+							</div>
+							<div class="yui-u">
+								<ul class="talent">
+									<li>German (native)</li>
+									<li class="last">English (proficient)</li>
+								</ul>
+							</div>
+						</div><!--// .yui-gf-->
+					</div><!--// .yui-gf -->
 
 				</div><!--// .yui-b -->
 			</div><!--// yui-main -->
@@ -142,6 +176,32 @@
 		<div id="ft">
 			<p>Kevin Buck &mdash; <a href="mailto:kebuck@bluewin.ch">kebuck@bluewin.ch</a> &mdash; +41 76 558 17 52</p>
 		</div><!--// footer -->
+
+		<script>
+			// visit counter code
+
+			window.addEventListener('DOMContentLoaded', (event) => {
+   				 getVisitCount();
+				});
+
+			// API endpoint
+				const ResumeCounterFunc = 'https://func-crc-kb.azurewebsites.net/api/ResumeCounter?code=jDmo03ki32JzgW7rD7rh4ilfc9AsjUSLT8e4cJo2MGqyAzFuP6vB_A==';
+
+			const getVisitCount = () => {
+    			let count = 10;
+    			fetch(ResumeCounterFunc).then(response => {
+      		  return response.json()
+    			}).then(response => {
+      		  console.log("Webpage called function API.");
+        		count = response.count;
+        		document.getElementById("counter").innerText = count
+    			}).catch(function(error){
+        		console.log(error);
+    			});
+
+   			 return count;
+				}
+		</script>
 
 	</div><!-- // inner -->
 
