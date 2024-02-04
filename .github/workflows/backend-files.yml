@@ -2,6 +2,7 @@ name: Deploy baclkend files
 
 
 on:
+  workflow_dispatch:
   push:
       branches: [ main ]
       paths:
