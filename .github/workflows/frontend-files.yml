@@ -1,0 +1,32 @@
+name: Deploy frontend files
+
+on:
+    push:
+        branches: [ main ]
+        paths:
+        - 'frontend/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Upload static website to blob storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+            az storage blob upload-batch --account-name stcloudresumechallenge --auth-mode key -d '$web' -s . --overwrite
+    - name: Purge CDN endpoint
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+           az cdn endpoint purge --content-paths  "/*" --profile-name "cdn-crcprofile-001" --name "crckb" --resource-group "Rrg-cloudresumechallenge-001"
+
+    - name: logout
+      run: |
+            az logout
+      if: always()

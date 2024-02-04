@@ -1,0 +1,59 @@
+name: Deploy baclkend files
+
+
+on:
+  push:
+      branches: [ main ]
+      paths:
+      - 'backend/**'
+
+env:
+  COSMOS_ENDPOINT: ${{ secrets.ENDPOINT }} 
+  COSMOS_KEY: ${{ secrets.KEY }}
+  AZURE_FUNCTIONAPP_NAME: 'ResumeCountFunc'
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: 'backend'
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v3
+
+    - name: 'Login to Azure via CLI'
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Setup Python ${{ env.PYTHON_VERSION }} Environment
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+
+    - name: 'Resolve Project Dependencies Using Pip'
+      shell: bash
+      run: |
+        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt --target=".python_packages/lib/site-packages"
+        pip install azure-functions
+        pip install azure-cosmos
+        pip install pytest
+        popd
+
+    - name: Run Unit Test
+      shell: bash
+      run: |
+        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/ResumeCounter'
+        pytest -v -s
+
+    - name: 'Run Azure Functions Action'
+      uses: Azure/functions-action@v1
+      id: fa
+      with:
+        app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+        package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/ResumeCounter'
+        publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+        scm-do-build-during-deployment: true
+        enable-oryx-build: true
