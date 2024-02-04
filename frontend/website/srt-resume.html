@@ -173,33 +173,33 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 			</div><!--// yui-main -->
 		</div><!--// bd -->
 
+		<script>
+			// visit counter code
+
+			window.addEventListener('DOMContentLoaded', (event) => {
+					getVisitCount();
+				});
+
+			// API endpoint
+				const ResumeCounterFunc = 'https://func-crc-kb.azurewebsites.net/api/ResumeCounter?code=jDmo03ki32JzgW7rD7rh4ilfc9AsjUSLT8e4cJo2MGqyAzFuP6vB_A==';
+
+			const getVisitCount = () => {
+				fetch(ResumeCounterFunc).then(response => {
+				return response.json()
+				}).then(response => {
+				console.log("Webpage called function API.");
+				counter = response.count;
+				document.getElementById("count").innerText = counter
+				}).catch(function(error){
+				console.log(error);
+				});
+
+				return counter;
+				}
+		</script>
+
 		<div id="ft">
-			<p>Kevin Buck &mdash; <a href="mailto:kebuck@bluewin.ch">kebuck@bluewin.ch</a> &mdash; +41 76 558 17 52</p>
-			<script>
-				// visit counter code
-	
-				window.addEventListener('DOMContentLoaded', (event) => {
-						getVisitCount();
-					});
-	
-				// API endpoint
-					const ResumeCounterFunc = 'https://func-crc-kb.azurewebsites.net/api/ResumeCounter?code=jDmo03ki32JzgW7rD7rh4ilfc9AsjUSLT8e4cJo2MGqyAzFuP6vB_A==';
-	
-				const getVisitCount = () => {
-					let count = 10;
-					fetch(ResumeCounterFunc).then(response => {
-					return response.json()
-					}).then(response => {
-					console.log("Webpage called function API.");
-					count = response.count;
-					document.getElementById("counter").innerText = count
-					}).catch(function(error){
-					console.log(error);
-					});
-	
-					return count;
-					}
-			</script>
+			<p>Kevin Buck &mdash; <a href="mailto:kebuck@bluewin.ch">kebuck@bluewin.ch</a> &mdash; +41 76 558 17 52 &mdash; Number of visits to this page: <a id="count" style="color: black;"></a> </p>
 		</div><!--// footer -->
 
 		
