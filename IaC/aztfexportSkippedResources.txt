@@ -1,0 +1,14 @@
+Following resources are marked to be skipped:
+
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Cdn/profiles/cdn-crcprofile-001/endpoints/crckb/origins/stcloudresumechallenge-z1-web-core-windows-net
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stcloudresumechallenge/blobServices/default
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stcloudresumechallenge/fileServices/default
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stcloudresumechallenge/queueServices/default
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stcloudresumechallenge/tableServices/default
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb/blobServices/default
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb/fileServices/default
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb/queueServices/default
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb/tableServices/default
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb/basicPublishingCredentialsPolicies/ftp
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb/basicPublishingCredentialsPolicies/scm
+- /subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb/config/web

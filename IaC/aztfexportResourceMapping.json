@@ -1,0 +1,97 @@
+{
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Cdn/profiles/cdn-crcprofile-001/endpoints/crckb": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Cdn/profiles/cdn-crcprofile-001/endpoints/crckb",
+		"resource_type": "azurerm_cdn_endpoint",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDb/databaseAccounts/cdb-crckb": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDB/databaseAccounts/cdb-crckb",
+		"resource_type": "azurerm_cosmosdb_account",
+		"resource_name": "res-3"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDb/databaseAccounts/cdb-crckb/SQLDATABASES/AzureResume": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDB/databaseAccounts/cdb-crckb/sqlDatabases/AzureResume",
+		"resource_type": "azurerm_cosmosdb_sql_database",
+		"resource_name": "res-4"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDb/databaseAccounts/cdb-crckb/SQLDATABASES/AzureResume/CONTAINERS/Counter": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDB/databaseAccounts/cdb-crckb/sqlDatabases/AzureResume/containers/Counter",
+		"resource_type": "azurerm_cosmosdb_sql_container",
+		"resource_name": "res-5"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDb/databaseAccounts/cdb-crckb/sqlRoleDefinitions/00000000-0000-0000-0000-000000000001": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDB/databaseAccounts/cdb-crckb/sqlRoleDefinitions/00000000-0000-0000-0000-000000000001",
+		"resource_type": "azurerm_cosmosdb_sql_role_definition",
+		"resource_name": "res-6"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDb/databaseAccounts/cdb-crckb/sqlRoleDefinitions/00000000-0000-0000-0000-000000000002": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.DocumentDB/databaseAccounts/cdb-crckb/sqlRoleDefinitions/00000000-0000-0000-0000-000000000002",
+		"resource_type": "azurerm_cosmosdb_sql_role_definition",
+		"resource_name": "res-7"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stcloudresumechallenge": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stcloudresumechallenge",
+		"resource_type": "azurerm_storage_account",
+		"resource_name": "res-8"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stcloudresumechallenge/blobServices/default/containers/$web": {
+		"resource_id": "https://stcloudresumechallenge.blob.core.windows.net/$web",
+		"resource_type": "azurerm_storage_container",
+		"resource_name": "res-10"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb",
+		"resource_type": "azurerm_storage_account",
+		"resource_name": "res-14"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb/blobServices/default/containers/azure-webjobs-hosts": {
+		"resource_id": "https://stfunccrckb.blob.core.windows.net/azure-webjobs-hosts",
+		"resource_type": "azurerm_storage_container",
+		"resource_name": "res-16"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb/blobServices/default/containers/azure-webjobs-secrets": {
+		"resource_id": "https://stfunccrckb.blob.core.windows.net/azure-webjobs-secrets",
+		"resource_type": "azurerm_storage_container",
+		"resource_name": "res-17"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb/blobServices/default/containers/scm-releases": {
+		"resource_id": "https://stfunccrckb.blob.core.windows.net/scm-releases",
+		"resource_type": "azurerm_storage_container",
+		"resource_name": "res-18"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Storage/storageAccounts/stfunccrckb/fileServices/default/shares/func-crc-kb9e85": {
+		"resource_id": "https://stfunccrckb.file.core.windows.net/func-crc-kb9e85",
+		"resource_type": "azurerm_storage_share",
+		"resource_name": "res-20"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/serverFarms/ASP-rgcloudresumechallenge001-8676": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/serverfarms/ASP-rgcloudresumechallenge001-8676",
+		"resource_type": "azurerm_service_plan",
+		"resource_name": "res-23"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb",
+		"resource_type": "azurerm_linux_function_app",
+		"resource_name": "res-24"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb/functions/ResumeCounter": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb/functions/ResumeCounter",
+		"resource_type": "azurerm_function_app_function",
+		"resource_name": "res-28"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb/hostNameBindings/func-crc-kb.azurewebsites.net": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Web/sites/func-crc-kb/hostNameBindings/func-crc-kb.azurewebsites.net",
+		"resource_type": "azurerm_app_service_custom_hostname_binding",
+		"resource_name": "res-29"
+	},
+	"/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/microsoft.cdn/profiles/cdn-crcprofile-001": {
+		"resource_id": "/subscriptions/17b273e9-f3d7-4d23-af84-4eded7c2b5d8/resourceGroups/rg-cloudresumechallenge-001/providers/Microsoft.Cdn/profiles/cdn-crcprofile-001",
+		"resource_type": "azurerm_cdn_profile",
+		"resource_name": "res-30"
+	}
+}
